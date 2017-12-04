@@ -1,0 +1,10 @@
+﻿  ConsoleApplication1.cpp
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\string.h(24): warning C4018: '<': incompatibilidade de signed/unsigned
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\string.h(39): warning C4018: '<': incompatibilidade de signed/unsigned
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\string.h(44): warning C4018: '<': incompatibilidade de signed/unsigned
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\string.h(73): warning C4018: '<': incompatibilidade de signed/unsigned
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\string.h(79): warning C4018: '<': incompatibilidade de signed/unsigned
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\backend.h(170): warning C4244: 'argumento': conversão de 'time_t' para 'unsigned int', possível perda de dados
+c:\users\lucas\source\repos\consoleapplication1\consoleapplication1\backend.h(118): warning C4715: 'findUser': nem todos os caminhos de controle retornam um valor
+  ConsoleApplication1.vcxproj -> C:\Users\Lucas\source\repos\ConsoleApplication1\Debug\ConsoleApplication1.exe
+  ConsoleApplication1.vcxproj -> C:\Users\Lucas\source\repos\ConsoleApplication1\Debug\ConsoleApplication1.pdb (Partial PDB)
