@@ -33,7 +33,7 @@ string replace(string txt, string target, string to) {
 }
 
 string *getWordAfter(string txt, string target) {
-	int found = 0;
+	int found = 1;
 	string *found_words = new string[found];
 
 	for (int i = 0; i < (txt.length() - target.length()); i++)
@@ -61,11 +61,13 @@ string *getWordAfter(string txt, string target) {
 		}
 	}
 
+	found_words[0] = to_string(found);
+	
 	return found_words;
 }
 
 string *getWordBefore(string txt, string target) {
-	int found = 0;
+	int found = 1;
 	string *found_words = new string[found];
 
 	txt = " " + txt;
@@ -95,6 +97,8 @@ string *getWordBefore(string txt, string target) {
 			found++;
 		}
 	}
+
+	found_words[0] = to_string(found);
 
 	return found_words;
 }

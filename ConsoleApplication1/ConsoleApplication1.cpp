@@ -70,7 +70,7 @@ void interfaceTimeline(SocialNetwork &sn) {
 		system("cls");
 		listPosts(sn);
 
-		cout << "1 - Escrever um post" << endl;
+		cout << endl <<  "1 - Escrever um post" << endl;
 		cout << "2 - Sair da conta" << endl;
 
 		cin >> option;
@@ -87,14 +87,20 @@ void interfaceTimeline(SocialNetwork &sn) {
 
 void interfacePost(SocialNetwork &sn) {
 	system("cls");
-	string content;
+	string content = "";
 
 	do {
+		if(content == "") {
+			Sleep(1000);
+		}
+
 		system("cls");
 		cout << "Conteudo do post: " << endl;
+
+		cin.ignore();
 		getline(cin, content);
 		cout << endl;
-	} while (!writePost(sn, sn.current_user, replace(content, " ", "_")));
+	} while (!writePost(sn, sn.current_user, content));
 
 	cout << endl << "Todos já podem ver seu post, sua timeline está sendo carregada..." << endl;
 
@@ -184,14 +190,14 @@ void interfaceMain(SocialNetwork &sn) {
 
 int main()
 {
-	string *words = getWordAfter("camila@camila e fulano@fulano em tal lugar, tambem junto com o matheus@matheus", "@");
+	/*string *words = getWordAfter("dasudhasi @fulano", "@");
 
-	for (int i = 0; i < 3; i++)
+	for (int i = 0; i < stoi(words[0]); i++)
 	{
 		cout << words[i] << endl;
 	}
 
-	system("pause");
+	system("pause");*/
 
 	setlocale(LC_ALL, "PORTUGUESE");
 
